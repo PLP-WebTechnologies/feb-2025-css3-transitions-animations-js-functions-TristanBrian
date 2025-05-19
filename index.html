@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 & JavaScript Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Showcase</h1>
+        <p>Demonstrating CSS3 Transitions, Animations & JavaScript</p>
+    </header>
+
+    <main>
+        <section class="preferences">
+            <h2>User Preferences</h2>
+            <form id="prefs-form">
+                <div class="form-group">
+                    <label for="username">Your Name:</label>
+                    <input type="text" id="username" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="theme">Theme Color:</label>
+                    <select id="theme">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="animation-speed">Animation Speed:</label>
+                    <input type="range" id="animation-speed" min="0.5" max="3" step="0.1" value="1">
+                    <span id="speed-value">1x</span>
+                </div>
+                <button type="submit" class="btn btn-save">Save Preferences</button>
+            </form>
+        </section>
+
+        <section class="animation-showcase">
+            <h2>Animation Playground</h2>
+            <div class="animation-controls">
+                <button id="bounce-btn" class="btn">Bounce Animation</button>
+                <button id="spin-btn" class="btn">Spin Animation</button>
+                <button id="color-change-btn" class="btn">Color Change</button>
+            </div>
+            <div id="animation-box" class="animation-box"></div>
+        </section>
+
+        <section class="transition-showcase">
+            <h2>Transition Examples</h2>
+            <div class="transition-examples">
+                <div class="transition-box grow-on-hover">Hover to Grow</div>
+                <div class="transition-box color-transition">Color Transition</div>
+                <div class="transition-box shadow-on-hover">Shadow Effect</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Welcome back, <span id="welcome-user">Guest</span>!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
